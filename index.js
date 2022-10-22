@@ -1,8 +1,9 @@
 function primeBetween() {
   let a = Number(document.getElementById("a").value);
   let b = Number(document.getElementById("b").value);
-  let res = "";
+  let res = "Primes between a and b: \n";
   console.log("Primes between a and b: ");
+  if (b < a) alert("This is not a valid input");
   for (let i = a; i <= b; i++) {
     if (i == 1 || i == 0) continue;
     let flag = 1;

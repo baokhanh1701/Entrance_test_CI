@@ -8,40 +8,57 @@
     <meta name="viewport" content="width=device-width" />
   </head>
   <body>
-    <script src="/index.js"></script>
-    <h1>Prime between an interval</h1>
-    <p>Input 2 number a and b, the output will print prime numbers between a and b.</p>
-    <form action="/" id="form" name="form">
-      <hr />
-      <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
-      <input
-        type="text"
-        name="a"
-        id="a"
-        placeholder="Insert first number..."
-        required
-      />
-      <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
-      <input
-        type="text"
-        name="b"
-        id="b"
-        placeholder="Insert second number..."
-        required
-      />
-      <hr />
-      <div class="btn-block">
-        <button id="submit_1" type="button" onclick="primeBetween()">Submit</button>
-      </div>
-      <h4 id="output_prime"></h4>
-    </form>
-    <h1>Fun Triangle</h1>
-    <p>Input an number, then we will print a triangle in the most basic way possible.</p>
-    <form action="/" id="form" name="form">
+    <script src="index.js"></script>
+    <div>
+      <h1>Prime between an interval</h1>
+      <p>
+        Input 2 number a and b, the output will print prime numbers between a
+        and b.
+      </p>
+      <form action="/" id="form" name="form" class="center">
+        <hr />
+        <label for="name"><i class="fas fa-envelope"></i></label>
+        <input
+          type="text"
+          name="a"
+          class="center"
+          id="a"
+          placeholder="Insert first number..."
+          required
+        />
+        <label for="name"><i class="fas fa-unlock-alt"></i></label>
+        <input
+          type="text"
+          name="b"
+          class="center"
+          id="b"
+          placeholder="Insert second number..."
+          required
+        />
+        <hr />
+        <div class="btn-block">
+          <button id="submit_1" type="button" onclick="primeBetween()">
+            Submit
+          </button>
+        </div>
+        <p id="output_prime">
+          <br />
+        </p>
+      </form>
+    </div>
+
+    <div>
+      <h1>Fun Triangle</h1>
+      <p>
+        Input an number, then we will print a triangle in the most basic way
+        possible.
+      </p>
+      <form action="/" id="form" name="form" class="center">
         <hr />
         <input
           type="text"
           name="num"
+          class="center"
           id="num"
           placeholder="Insert a number..."
           required
@@ -52,5 +69,6 @@
         </div>
         <pre id="output_triangle"></pre>
       </form>
-</body>
+    </div>
+  </body>
 </html>
