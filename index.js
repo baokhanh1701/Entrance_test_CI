@@ -33,6 +33,7 @@ function primeBetween() {
 function numberOneTriangle() {
     let res = "";
     let num = Number(document.getElementById("num").value);
+    if (num <= 0 || num > 10) alert("Đề bài: Hàm có tham số truyền vào là một số nguyên trong khoảng (1-10), bạn vừa nhập sai rồi");
     for (let i = 0; i < num; i++) {
         for(let j = 0; j < i+1; j++) {
             res += "*";
